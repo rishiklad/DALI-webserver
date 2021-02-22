@@ -21,9 +21,13 @@ Note that all words in {brackets} are intended to be provided by the user as par
 12. Returns the number of occurences for the given {key} and string {arg} pair across all DALI members
 13. Returns the most frequent value (mode) for the given {key}   
 
+Refer to app.js for endpoint syntax. As an example, one potential request could be `localhost:3000/gender/strEquals/Male`
+
 **POST Routes**
 1. Directly input incoming request's body into the dataset
 2. Directly add the {key}:{arg} pair to every DALI member 
+
+Refer to app.js for endpoint syntax. 
 
 ## Warning
 The {key} is case-sensitive! Make sure you enter "sleepPerNight", instead of "sleeppernight." Otherwise you will receive invalid data. 
@@ -35,5 +39,5 @@ The {key} is case-sensitive! Make sure you enter "sleepPerNight", instead of "sl
 4. Enter request URLs that align with GET/POST endpoints and enjoy! 
 
 ## How to POST Data
-Use Postman: change the request type to POST and enter in the right request URL. Then, under the Body section, click on x-www-form-urlencoded and enter in various key:value pairs that align with your intent. Then click send -- you will receive a confirmation message in the request. 
+Use Postman: change the request type to POST and enter in the right request URL. Then, under the Body section, click on x-www-form-urlencoded and enter in various key:value pairs that align with your intent. Usually you will enter in values for all fields that are typically associated with a DALI member. Then click send -- you will receive a confirmation message in the request. 
 
